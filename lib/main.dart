@@ -26,7 +26,19 @@ class FirstScreen extends StatelessWidget {
           },
         ),
       ),
-      bottomNavigationBar: BottomAppBar(),
+      bottomNavigationBar: BottomAppBar(
+          child: Container(
+        height: 50,
+        color: Colors.amber,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Icon(Icons.star),
+            Icon(Icons.star),
+            Icon(Icons.star),
+          ],
+        ),
+      )),
     );
   }
 }
